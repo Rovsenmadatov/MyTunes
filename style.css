@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    background-color: #1b0058;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.5);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+.header{
+    margin-right: -10000px;
+}
+    
+
+.header .menu a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 22px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.logo{
+    color: #fff;
+    margin-left: 40px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.ana-sayfa{
+    background: url(image/hero_image.png) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.ana-sayfa h1,h3,p{
+    color: #fff;
+    margin-top: 20px;
+}
+
+.ana-sayfa p {
+    padding: 0 200px;
+    font-size: 22px;
+}
+
+.ana-sayfa h1{
+    font-size: 70px;
+}
+
+.ana-sayfa h3{
+    font-size: 30px;
+}
+
+
+
+.bi-list{
+    color: white;
+    height: 40px;
+    width: 100px;
+    display: none;
+   
+}
+
+.muzik{
+    background-color: #281154;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.muzik1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+.muzik .img img{
+   height: 500px;
+}
+
+
+.music{
+    display: flex;
+    align-items: center;
+    
+}
+
+.Music-content{
+    color: #fff;
+    font-size: 50px;
+}
+
+.music .bi{
+    color: #fff;
+    width: 50px;
+    height: 50px;
+}
+
+.muzik h3,button,p{
+    margin: 20px;
+}
+
+.btn{
+    background-color: #270082;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border:none;
+    font-size: 20px;
+}
+
+.muzik p{
+    font-size: 21px;
+}
+
+.video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.video-container .img img{
+    height: 400px;
+}
+
+.video1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 110px;
+    gap: 20px;
+}
+
+.video1 p{
+    color: #000;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.video1 h1{
+font-size: 40px;
+text-align: center;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(image/video.png) no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.about1{
+    padding: 50px;
+}
+.about1 h1{
+    color: #fff;
+    font-size: 50px;
+}
+
+.about1 p{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hediye-container{
+    display: flex;
+    align-items: center;
+    margin: 60px 0;
+    ;
+}
+
+.container{
+    display: flex;
+    flex-direction:column ;
+    text-align: center;
+}
+
+.hediye1 h1{
+    font-size: 35px;
+}
+
+.hediye1 p{
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+hr{
+    margin: 0 50px;
+}
+
+.footer{
+    background-color: #1b0058;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.footer-upper{
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-lower{
+    text-align: center;
+}
+
+.box h4,ul li{
+    color: #fff;
+    list-style: none;
+}
+
+.box h4{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.header .menu a{
+    border-bottom: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.header .menu a:hover{
+    border-bottom: 2px solid white;
+}
+
+
+.btn:hover{
+    transform: scale(0.96);
+    opacity: 0.8;
+}
+
+@media screen and (max-width:1200px){
+    .video1 p{
+        font-size: 16px;
+       } 
+       .video1 h1{
+        font-size: 35px;
+       }
+    .muzik .img img{
+      height: 200px;
+     }
+     .header{
+        height: 80px;
+     }
+
+     .video-container .img img{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:890px){
+    .video1{
+        gap: 10px;
+    }
+    
+    .video1 h1{
+        font-size: 28px;
+    }
+
+    .about1 h1{
+        font-size: 35px;
+    }
+
+    .about1 p{
+        font-size: 23px;
+    }
+
+    .hediye1 p{
+        font-size: 13px;
+    }
+
+    .ana-sayfa p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .header .menu{
+        display: none;
+    }
+
+    .bi-list{
+        display: inline-block;
+       
+    }
+}
+
+@media screen and (max-width:750px){
+    .video-container .img img{
+        height: 200px;
+    }
+
+    .hediye-container .img img{
+        width: 370px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .ana-sayfa h3{
+        font-size: 24px;
+    }
+    .ana1 h1{
+        font-size: 50px;
+    }
+
+    .ana-sayfa p {
+        padding: 0 150px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .ana-sayfa h1{
+        font-size: 40px;
+    }
+    .header{
+        height: 50px;
+    }
+
+    .logo{
+        font-size: 30px;
+    }
+
+    .ana-sayfa .ana1{
+        margin-top: 50px;
+    }
+
+    .ana-sayfa p{
+      padding: 0 100px;
+    }
+
+    .footer-upper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box ul{
+        margin-top: 10px ;
+    }
+
+    .box h4{
+        display: inline;
+    }
+
+    .hediye-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hediye-container .img img{
+        width: 270px;
+    }
+
+    .hediye1 h1{
+        font-size: 25px;
+    }
+    .hediye1 p{
+        font-size: 10px;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:550px){
+
+    .video-container .img img{
+        height: 150px;
+    }
+
+    .muzik .img img{
+        height: 160px;
+       }
+}
